@@ -14,6 +14,7 @@
     'use strict';
 
     // Your code here...
+    $(".dropdown_banner_title").css({"padding":"0 20px 0 20px","text-align":"center","font-size":"50%","word-wrap":"break-word"});
     $("#final_translation").bind("DOMSubtreeModified",(function(){
         $(".dropdown_banner_title").text($("#final_translation").children().last().children().first().text());
     }))
